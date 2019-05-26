@@ -1,0 +1,10 @@
+public void Inventory(final String data) {
+    shortOperation(data);
+    new Thread(new Runnable() {
+        public void run(){
+            longOperation(data);
+        }
+    }).start();
+}
+
+Pseudocode of running functions asyncrounously.
